@@ -44,7 +44,7 @@ cd ../frontend
 npm start
 ```
 
-7. Configure environment variables.
+7. Configure environment variables and Google API credentials.
    Sample .env file in backend directory
 
 ```
@@ -59,6 +59,24 @@ Sample .env file in frontend directory
 
 ```
 REACT_APP_BACKEND_URL=<your_backend_url>
+```
+
+Sample Google API credentials
+
+```
+{
+  "type": "service_account",
+  "project_id": <project_id>,
+  "private_key_id":<private_key_id>,
+  "private_key": <private_key>,
+  "client_email": <email@example.com>,
+  "client_id": <client_id>,
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "",
+  "universe_domain": "googleapis.com"
+}
 ```
 
 8. The deployed web application can also be accessed at [https://cas-clearance.vercel.app/](https://cas-clearance.vercel.app/)
